@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dell Inventory Management</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="app-header">
+      <div>
+        <h1>Dell Inventory Management System</h1>
+        <p class="brand-description">A responsive Dell-inspired inventory dashboard using JavaScript array storage.</p>
+      </div>
+    </header>
+
+    <section class="dashboard-grid">
+      <article class="summary-card">
+        <p class="summary-label">Total Products in Stock</p>
+        <h2 id="total-count">0</h2>
+      </article>
+    </section>
+
+    <section class="inventory-section">
+      <div class="section-header">
+        <div>
+          <h2>Inventory Control</h2>
+          <p>Manage Dell products with add, remove, availability check, and real-time search.</p>
+        </div>
+      </div>
+
+      <div class="panel-grid">
+        <div class="panel-card">
+          <h3>Inventory Actions</h3>
+          <div class="control-group">
+            <label for="new-product">Add Product</label>
+            <div class="control-action">
+              <input type="text" id="new-product" placeholder="Enter product name" />
+              <button id="add-product-btn">Add</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="remove-product">Remove Product</label>
+            <div class="control-action">
+              <input type="text" id="remove-product" placeholder="Enter product name" />
+              <button id="remove-product-btn">Remove</button>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="check-product">Check Availability</label>
+            <div class="control-action">
+              <input type="text" id="check-product" placeholder="Enter product name" />
+              <button id="check-product-btn">Check</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-card search-card">
+          <h3>Search Inventory</h3>
+          <input type="text" id="search-product" placeholder="Search products in real time" />
+          <p class="search-info">Type any product name and matches will be highlighted.</p>
+        </div>
+      </div>
+
+      <div id="status-message" class="status-message info">Ready to manage Dell inventory.</div>
+
+      <ul id="product-list" class="product-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
