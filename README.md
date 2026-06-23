@@ -26,16 +26,16 @@ A professional mini-project built with HTML, CSS, and vanilla JavaScript. The De
 
 ```
 project 2/
-├─ index.html
-├─ styles.css
-├─ script.js
+├─ dell.html
+├─ dell.css
+├─ dell.js
 └─ README.md
 ```
 
 ## Installation and Run Steps
 
 1. Open the `project 2` folder.
-2. Open `index.html` in any modern web browser.
+2. Open `dell.html` in any modern web browser.
 3. Use the dashboard and controls to manage Dell inventory.
 
 ## Screenshots
